@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>汉字拼音练习本</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1></h1>
+            <div class="tabs">
+                <!-- <button class="tab active" data-tab="writing">汉字书写</button>
+                <button class="tab" data-tab="pinyin">拼音练习</button> -->
+            </div>
+        </header>
+        
+        <div class="practice-area" id="writingArea">
+            <div class="character-box">
+                <div class="pinyin">zhāng</div>
+                <div class="character">张</div>
+            </div>
+
+            <div class="character-box">
+                <div class="pinyin">xī</div>
+                <div class="character">熙</div>
+            </div>
+
+            <div class="character-box">
+                <div class="pinyin">chén</div>
+                <div class="character">晨</div>
+            </div>
+        </div>
+
+        <div class="pinyin-area" id="pinyinArea" style="display: none;">
+            <div class="pinyin-practice">
+                <h2>声母练习</h2>
+                <div class="pinyin-grid" id="shengmuGrid">
+                    <div class="pinyin-item">b</div>
+                    <div class="pinyin-item">p</div>
+                    <div class="pinyin-item">m</div>
+                    <div class="pinyin-item">f</div>
+                    <!-- 更多声母将通过 JavaScript 动态添加 -->
+                </div>
+                
+                <h2>韵母练习</h2>
+                <div class="pinyin-grid" id="yunmuGrid">
+                    <div class="pinyin-item">a</div>
+                    <div class="pinyin-item">o</div>
+                    <div class="pinyin-item">e</div>
+                    <div class="pinyin-item">i</div>
+                    <!-- 更多韵母将通过 JavaScript 动态添加 -->
+                </div>
+
+                <h2>声调练习</h2>
+                <div class="tone-grid">
+                    <div class="tone-item">ā</div>
+                    <div class="tone-item">á</div>
+                    <div class="tone-item">ǎ</div>
+                    <div class="tone-item">à</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
